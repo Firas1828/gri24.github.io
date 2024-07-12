@@ -33,9 +33,9 @@ function showSlides() {
 function loadEvents() {
     const eventList = document.getElementById('event-list');
     const events = [
-        'Research Seminar - July 20, 2024',
-        'Lab Tour - July 22, 2024',
-        'Project Presentation - July 25, 2024'
+        'projects peer review - july 24',
+        'Closing ceremony - july 25',
+        'bye bye - july 25'
     ];
     events.forEach(event => {
         const li = document.createElement('li');

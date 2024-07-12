@@ -117,3 +117,10 @@ header .logo img {
     height: auto; /* Maintain aspect ratio */
     max-height: 150px; /* Set a maximum height for the logo */
 }
+.profile-photo {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Makes the image round */
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 0 auto 20px; /* Centers the image and adds some bottom margin */
+}
