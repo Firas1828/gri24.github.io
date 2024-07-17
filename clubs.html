@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs - GRI'24 Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh; /* Changed height to min-height for better content handling */
+        }
+        .club-container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; /* Added margin-top to separate from header */
+        }
+        .club {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .club-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .join-button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px; /* Added margin-left for spacing between buttons */
+        }
+        .join-button:hover {
+            background-color: #0056b3;
+        }
+        header {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .logo img {
+            height: 50px; /* Adjust height as needed */
+            margin-left: 20px; /* Added margin-left for spacing from the edge */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="kacst-logo.png.png" alt="GRI'24 Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="academic-resources.html">Academic Resources</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="map.html">KACST map</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+                <li><a href="clubs.html">Clubs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="club-container">
+        <div class="club">
+            <div class="club-name">Physics Club</div>
+            <button class="join-button" onclick="joinClub('Chemistry Club')">Join</button>
+        </div>
+        <div class="club">
+            <div class="club-name">Coding Club</div>
+            <button class="join-button" onclick="joinClub('Coding Club')">Join</button>
+        </div>
+        <div class="club">
+            <div class="club-name">Art Club</div>
+            <button class="join-button" onclick="joinClub('Football Club')">Join</button>
+        </div>
+        <!-- Add more clubs as needed -->
+    </div>
+    <body>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script async src="./chat-widget.js"></script>
+
+    <footer>
+        <p>&copy; 2024 GRI'24. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function joinClub(clubName) {
+            alert(`Your request to join "${clubName}" will be reviewed.`);
+        }
+    </script>
+</body>
+</html>
